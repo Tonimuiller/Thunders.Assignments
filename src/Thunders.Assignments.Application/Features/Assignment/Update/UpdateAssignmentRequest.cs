@@ -2,7 +2,7 @@
 
 namespace Thunders.Assignments.Application.Features.Assignment.Update;
 
-public sealed record UpdateAssignmentRequest : SaveAssignmentRequest<UpdateAssigmentResponse>
+public sealed record UpdateAssignmentRequest : SaveAssignmentRequest<UpdateAssignmentResponse>
 {
     public Guid Id { get; set; }
 }

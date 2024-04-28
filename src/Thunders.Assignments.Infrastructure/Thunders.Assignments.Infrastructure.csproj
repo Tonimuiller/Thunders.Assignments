@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Thunders.Assignments.Domain\Thunders.Assignments.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

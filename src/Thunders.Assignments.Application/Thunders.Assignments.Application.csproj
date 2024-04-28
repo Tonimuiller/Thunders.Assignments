@@ -10,4 +10,12 @@
     <PackageReference Include="MediatR" Version="12.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Thunders.Assignments.Domain\Thunders.Assignments.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Thunders.Assignments.Tests"/>
+  </ItemGroup>
+
 </Project>

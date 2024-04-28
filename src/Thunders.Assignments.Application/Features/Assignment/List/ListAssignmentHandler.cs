@@ -3,14 +3,14 @@ using Thunders.Assignments.Application.Models;
 
 namespace Thunders.Assignments.Application.Features.Assignment.List;
 
-internal sealed class ListAssignmentHandler : UseCaseHandler<ListAssignmentRequest, IReadOnlyList<ListAssignmentResponse>>
+internal sealed class ListAssignmentHandler : IUseCaseHandler<ListAssignmentRequest, IReadOnlyList<ListAssignmentResponse>>
 {
     public ListAssignmentHandler()
     {
 
     }
 
-    public override Task<Result<IReadOnlyList<ListAssignmentResponse>>> Handle(ListAssignmentRequest request, CancellationToken cancellationToken)
+    public Task<Result<IReadOnlyList<ListAssignmentResponse>>> Handle(ListAssignmentRequest request, CancellationToken cancellationToken)
     {
         throw new NotImplementedException();
     }

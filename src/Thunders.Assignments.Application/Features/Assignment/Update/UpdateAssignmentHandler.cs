@@ -3,9 +3,9 @@ using Thunders.Assignments.Application.Models;
 
 namespace Thunders.Assignments.Application.Features.Assignment.Update;
 
-internal sealed class UpdateAssignmentHandler : UseCaseHandler<UpdateAssignmentRequest, UpdateAssigmentResponse>
+internal sealed class UpdateAssignmentHandler : IUseCaseHandler<UpdateAssignmentRequest, UpdateAssignmentResponse>
 {
-    public override Task<Result<UpdateAssigmentResponse>> Handle(UpdateAssignmentRequest request, CancellationToken cancellationToken)
+    public Task<Result<UpdateAssignmentResponse>> Handle(UpdateAssignmentRequest request, CancellationToken cancellationToken)
     {
         throw new NotImplementedException();
     }

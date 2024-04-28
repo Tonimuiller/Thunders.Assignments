@@ -2,4 +2,4 @@
 
 namespace Thunders.Assignments.Application.Features.Assignment.Update;
 
-public sealed record UpdateAssigmentResponse : SaveAssignmentResponse { }
+public sealed record UpdateAssignmentResponse : SaveAssignmentResponse { }

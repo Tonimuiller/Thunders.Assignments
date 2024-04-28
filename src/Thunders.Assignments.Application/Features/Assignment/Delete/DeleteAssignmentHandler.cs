@@ -3,14 +3,14 @@ using Thunders.Assignments.Application.Models;
 
 namespace Thunders.Assignments.Application.Features.Assignment.Delete;
 
-internal sealed class DeleteAssignmentHandler : UseCaseHandler<DeleteAssignmentRequest>
+internal sealed class DeleteAssignmentHandler : IUseCaseHandler<DeleteAssignmentRequest>
 {
     public DeleteAssignmentHandler()
     {
 
     }
 
-    public override Task<Result> Handle(DeleteAssignmentRequest request, CancellationToken cancellationToken)
+    public Task<Result> Handle(DeleteAssignmentRequest request, CancellationToken cancellationToken)
     {
         throw new NotImplementedException();
     }
