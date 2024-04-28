@@ -1,4 +1,4 @@
-namespace Thunders.Tasks.Tests
+namespace Thunders.Assignments.Tests
 {
     public class UnitTest1
     {

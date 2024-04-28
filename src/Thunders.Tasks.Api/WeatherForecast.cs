@@ -1,4 +1,4 @@
-namespace Thunders.Tasks.Api
+namespace Thunders.Assignments.Api
 {
     public class WeatherForecast
     {

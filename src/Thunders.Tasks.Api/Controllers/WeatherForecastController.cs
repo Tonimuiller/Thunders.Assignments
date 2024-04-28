@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Thunders.Tasks.Api.Controllers
+namespace Thunders.Assignments.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]

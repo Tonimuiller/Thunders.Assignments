@@ -1,0 +1,6 @@
+@Thunders.Assignments.Api_HostAddress = http://localhost:5062
+
+GET {{Thunders.Assignments.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

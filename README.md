@@ -1,2 +1,2 @@
-# Thunders.Tasks
-Task manager Thunders challenge project
+# Thunders.Assignments
+Assignments manager Thunders challenge project

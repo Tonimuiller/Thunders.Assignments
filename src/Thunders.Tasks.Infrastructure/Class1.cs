@@ -1,4 +1,4 @@
-﻿namespace Thunders.Tasks.Infrastructure
+﻿namespace Thunders.Assignments.Infrastructure
 {
     public class Class1
     {
