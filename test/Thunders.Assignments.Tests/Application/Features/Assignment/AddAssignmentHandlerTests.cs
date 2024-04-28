@@ -51,6 +51,11 @@ public sealed class AddAssignmentHandlerTests
         var result = await handler.Handle(request, CancellationToken.None);
 
         //Assert
+        _assignmentRepository
+            .DidNotReceive()
+            .Add(Arg.Any<Domain.Entities.Assignment>());
+        await _unitOfWork.DidNotReceive().CommitAsync(CancellationToken.None);
+
         result
             .Should()
             .NotBeNull();
@@ -84,6 +89,11 @@ public sealed class AddAssignmentHandlerTests
         var result = await handler.Handle(request, CancellationToken.None);
 
         //Assert
+        _assignmentRepository
+            .DidNotReceive()
+            .Add(Arg.Any<Domain.Entities.Assignment>());
+        await _unitOfWork.DidNotReceive().CommitAsync(CancellationToken.None);
+
         result
             .Should()
             .NotBeNull();
