@@ -7,15 +7,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C0770495-795
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{610EB7E8-E0CA-4ADA-B68C-90E084A8230B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thunders.Assignments.Api", "src\Thunders.Tasks.Api\Thunders.Assignments.Api.csproj", "{4EA81DA3-7B02-4971-9CA2-960E6451700A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thunders.Assignments.Api", "src\Thunders.Assignments.Api\Thunders.Assignments.Api.csproj", "{4EA81DA3-7B02-4971-9CA2-960E6451700A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thunders.Assignments.Tests", "test\Thunders.Tasks.Tests\Thunders.Assignments.Tests.csproj", "{87DB6BA0-08D6-4D3A-B34D-599769791939}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thunders.Assignments.Tests", "test\Thunders.Assignments.Tests\Thunders.Assignments.Tests.csproj", "{87DB6BA0-08D6-4D3A-B34D-599769791939}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thunders.Assignments.Domain", "src\Thunders.Tasks.Domain\Thunders.Assignments.Domain.csproj", "{63A2E04C-190F-4185-BF9B-2602F3D300ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thunders.Assignments.Domain", "src\Thunders.Assignments.Domain\Thunders.Assignments.Domain.csproj", "{63A2E04C-190F-4185-BF9B-2602F3D300ED}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thunders.Assignments.Application", "src\Thunders.Tasks.Application\Thunders.Assignments.Application.csproj", "{19A22746-2983-44A4-A2B6-026BAE34698B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thunders.Assignments.Application", "src\Thunders.Assignments.Application\Thunders.Assignments.Application.csproj", "{19A22746-2983-44A4-A2B6-026BAE34698B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thunders.Assignments.Infrastructure", "src\Thunders.Tasks.Infrastructure\Thunders.Assignments.Infrastructure.csproj", "{BC0B9821-BEC2-487B-82FC-7FD03C6724BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thunders.Assignments.Infrastructure", "src\Thunders.Assignments.Infrastructure\Thunders.Assignments.Infrastructure.csproj", "{BC0B9821-BEC2-487B-82FC-7FD03C6724BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
