@@ -25,12 +25,12 @@ public class Result<TValue> : Result
     new public static Result<TValue> BadRequest(string message) =>
         new Result<TValue>(false, null!, ResultType.BadRequest, message);
 
-    new public static Result NotFound(string message) =>
+    new public static Result<TValue> NotFound(string message) =>
         new Result<TValue>(false, null!, ResultType.NotFound, message);
 
-    new public static Result Conflict(string message) =>
+    new public static Result<TValue> Conflict(string message) =>
         new Result<TValue>(false, null!, ResultType.Conflict, message);
 
-    new public static Result Error(string message) =>
+    new public static Result<TValue> Error(string message) =>
         new Result<TValue>(false, null!, ResultType.Error, message);
 }
