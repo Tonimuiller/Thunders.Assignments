@@ -3,22 +3,22 @@ using Thunders.Assignments.Infrastructure.Persistence.Configurations;
 
 namespace Thunders.Assignments.Infrastructure.Persistence.Contexts;
 
-internal class AssignmentsContext : DbContext
+public class AssignmentsContext : DbContext
 {
     private readonly string dbPath;
 
     public AssignmentsContext()
-    {
+    {        
         var folder = Environment.SpecialFolder.LocalApplicationData;
         var path = Environment.GetFolderPath(folder);
-        dbPath = Path.Join(path, "blogging.db");
+        dbPath = Path.Join(path, "assignments.db");
     }
 
     public DbSet<Domain.Entities.Assignment> Assignments { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder options)
     {
-        options.UseSqlite($"Data Source={dbPath}");
+        options.UseSqlite($"Data Source={dbPath}");        
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
