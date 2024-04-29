@@ -25,7 +25,7 @@ internal sealed class DeleteAssignmentHandler : IUseCaseHandler<DeleteAssignment
             return Result.NotFound(AssignmentResources.AssignmentIdNotFound);
         }
 
-        _assignmentRepository.Delete(request.Id);
+        await _assignmentRepository.DeleteAsync(request.Id, cancellationToken);
         await _unitOfWork.CommitAsync(cancellationToken);
         return Result.Ok();
     }

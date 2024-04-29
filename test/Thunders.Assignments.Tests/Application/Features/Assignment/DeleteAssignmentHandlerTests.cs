@@ -51,9 +51,9 @@ public sealed class DeleteAssignmentHandlerTests
         var result = await handler.Handle(request, CancellationToken.None);
 
         //Assert
-        _assignmentRepository
+        await _assignmentRepository
             .DidNotReceive()
-            .Delete(Arg.Any<Guid>());
+            .DeleteAsync(Arg.Any<Guid>(), CancellationToken.None);
         
         await _unitOfWork
             .DidNotReceive()
@@ -95,9 +95,9 @@ public sealed class DeleteAssignmentHandlerTests
         var result = await handler.Handle(request, CancellationToken.None);
 
         //Assert
-        _assignmentRepository
+        await _assignmentRepository
             .Received()
-            .Delete(Arg.Any<Guid>());
+            .DeleteAsync(Arg.Any<Guid>(), CancellationToken.None);
 
         await _unitOfWork
             .Received()
