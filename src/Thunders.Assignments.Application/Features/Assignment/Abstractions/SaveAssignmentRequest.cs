@@ -7,7 +7,7 @@ public abstract record SaveAssignmentRequest<TSaveAssignmentResponse>
     where TSaveAssignmentResponse : SaveAssignmentResponse
 {
     public string Title { get; set; } = default!;
-    public string Description { get; set; } = default!;
+    public string? Description { get; set; }
     public DateTime Schedule { get; set; }
     public bool Done { get; set; }
 }

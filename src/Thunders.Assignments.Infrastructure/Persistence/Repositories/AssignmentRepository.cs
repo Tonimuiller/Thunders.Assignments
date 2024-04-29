@@ -48,6 +48,7 @@ internal sealed class AssignmentRepository : IAssignmentRepository
                 && ((options.ScheduleBeginning == null || options.ScheduleEnd == null) 
                 || (a.Schedule >= options.ScheduleBeginning.Value.ToDateTime(TimeOnly.MinValue)
                 && (a.Schedule <= options.ScheduleEnd.Value.ToDateTime(TimeOnly.MaxValue)))))
+            .OrderBy(a => a.Schedule)
             .ToListAsync(cancellationToken);
     }
 
